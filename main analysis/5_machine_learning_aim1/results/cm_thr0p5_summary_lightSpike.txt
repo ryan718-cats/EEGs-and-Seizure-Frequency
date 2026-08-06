@@ -1,0 +1,16 @@
+Confusion matrices @ threshold 0.5 (lightSpike)
+==============================================
+
+Aim1 Interactions Model (LR, N=1358)
+  Mean CM: TN=145.9 FP=22.1 FN=41.2 TP=62.8
+  Sensitivity = 60.4%  (MC 95% [51.0%, 68.3%])
+  Specificity = 86.9%  (MC 95% [82.1%, 91.1%])
+  Accuracy    = 76.7%
+  Fig: FigAim1_mc_mean_confusion_matrix_interaction_lightSpike.png
+
+Aim2 Full Model4 Youden (SVM, N=490)
+  Mean CM: TN=54.6 FP=7.4 FN=13.1 TP=22.9
+  Sensitivity = 63.7%  (MC 95% [50.0%, 77.8%])
+  Specificity = 88.1%  (MC 95% [80.6%, 95.2%])
+  Accuracy    = 79.1%
+  Fig: FigAim2_mc_mean_confusion_matrix_model4_full_lightSpike.png

@@ -1,0 +1,20 @@
+Aim1 Interactions — automatic Youden vs clinician report markers (OOB)
+========================================================================
+Design: train each MC split on auto Youden IED/slowing; at test time,
+  dual-report patients also scored with report present/absent swapped in
+  for spikes/slowing (+ type× interactions). No retrain.
+Cohort: N=1358; dual-report subset N=92
+Model: Model_interaction / lr; n_mc=1000 (kept 1000)
+
+Bagged OOS on dual-report patients:
+  Auto Youden:      AUROC=0.787 [0.675, 0.900]  AUPRC=0.727
+  Clinician report: AUROC=0.789 [0.678, 0.900]  AUPRC=0.769
+  Δ (auto − report) bagged AUROC = -0.002
+
+Paired MC-split AUROC (dual-report patients in each test fold):
+  n_paired=999; mean AUC auto=0.792, report=0.798, mean Δ=-0.006
+  Wilcoxon signed-rank (auto−report): p_two=1.081e-06, p_auto>report=1
+  Sign test: auto higher in 336, report higher in 467, ties=196; p=4.281e-06
+  Wilcoxon on patient bagged p_auto−p_report: p=0.02937
+
+Saved: /mnt/sauce/littlab/users/cho6/seizure_frequency_preprocessing/paper_approach/ml_analysis/outputs/Combined/aim1_report_vs_auto_markers_oob_interaction_lightSpike

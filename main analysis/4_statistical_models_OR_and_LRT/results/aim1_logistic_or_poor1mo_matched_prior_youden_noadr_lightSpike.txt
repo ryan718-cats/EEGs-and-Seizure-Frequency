@@ -1,0 +1,28 @@
+Aim 1 — poor>1.0/mo outcome + MATCHED prior (>1.0/mo) + Youden BINARY markers
+=============================================================================
+Outcome:  poor = post mean > 1.0/mo (N=521, 38.4%); else <=1.0/mo (N=837)
+Prior:    same rule on pre-EEG mean — not_poor=510, poor=414, NA=434 (ref=not_poor)
+ADR omitted; n_boot=1000
+Markers:  IED >=0.9273; slowing >=13.87%
+
+LRTs: Main vs Null χ²(2)=29.46 p=4.005e-07 · Inter vs Main χ²(2)=11.98 p=0.002507 · Inter vs Null χ²(4)=41.44 p=2.181e-08
+
+Null model ORs [95% CI], bootstrap p:
+  Epilepsy type: Focal vs Generalized    1.362 [1.032, 1.796]  p=0.032*
+  Prior 2yr: poor (mean > 1.0/mo) vs moderate/else 13.724 [10.015, 19.367]  p=0*
+  Prior 2yr: not available vs moderate/else 1.759 [1.304, 2.448]  p=0*
+  Age at EEG (years)                     0.993 [0.985, 1.001]  p=0.078
+  Sex (male vs female)                   0.662 [0.508, 0.847]  p=0*
+
+Interaction model ORs [95% CI], bootstrap p:
+  Epilepsy type: Focal vs Generalized    1.830 [1.211, 2.725]  p=0.006*
+  Prior 2yr: poor (mean > 1.0/mo) vs moderate/else 12.461 [9.052, 17.943]  p=0*
+  Prior 2yr: not available vs moderate/else 1.704 [1.250, 2.417]  p=0.002*
+  Age at EEG (years)                     0.991 [0.983, 0.999]  p=0.03*
+  Sex (male vs female)                   0.647 [0.494, 0.841]  p=0*
+  IEDs present (log10[rate/hr + 0.1] >= 0.9273; Youden vs report) 1.282 [0.784, 2.093]  p=0.356
+  Epilepsy type (Focal) × IEDs           1.297 [0.713, 2.357]  p=0.392
+  Slowing present (pct foc+gen >= 13.87%; Youden vs report) 3.451 [2.149, 5.896]  p=0*
+  Epilepsy type (Focal) × slowing        0.345 [0.184, 0.646]  p=0*
+
+OUT_DIR: outputs/Combined/statistical_tests_prior_matched1mo_poor1mo_youden_noadr_lightSpike/

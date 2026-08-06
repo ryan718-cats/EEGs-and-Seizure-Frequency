@@ -1,0 +1,6 @@
+C. Generalized Epilepsy Model AUROC Metrics. Full Model (0.813 [0.810, 0.815]) vs Clinical Model (0.765 [0.762, 0.768]) difference was statistically different (+0.071 [+0.042, +0.100]; p < 0.001).
+
+Notes:
+- Point estimates and 95% CIs are MC means over 1000 patient-grouped 80/20 permutations (bootstrap CI of the mean).
+- ROC/PR curves are the pointwise mean of the 1000 split curves (interpolated to a common grid).
+- Difference Δ / p: bagged out-of-sample paired DeLong test (full − clinical).

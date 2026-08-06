@@ -1,0 +1,6 @@
+D. Focal Epilepsy Model AUPRC Metrics. Full Model (0.709 [0.706, 0.712]) vs Clinical Model (0.675 [0.672, 0.678]) difference was statistically different (+0.050 [+0.024, +0.076]; p < 0.001).
+
+Notes:
+- Point estimates and 95% CIs are MC means over 1000 patient-grouped 80/20 permutations (bootstrap CI of the mean).
+- ROC/PR curves are the pointwise mean of the 1000 split curves (interpolated to a common grid).
+- Difference Δ / p: bagged out-of-sample paired bootstrap of AUPRC (full − clinical).

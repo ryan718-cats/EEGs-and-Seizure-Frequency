@@ -1,0 +1,18 @@
+Aim2 clinical vs full — Focal (Youden lightSpike)
+N=868  N_MC=1000
+Selected: {'Model1_clinical': 'lr', 'Model4_IED_slow': 'lr'}
+
+
+
+MC mean AUROC / AUPRC [bootstrap 95% CI of the mean]:
+  Model1_clinical: AUROC=0.774 [0.772, 0.776]  AUPRC=0.675 [0.672, 0.678]
+  Model4_IED_slow: AUROC=0.778 [0.776, 0.780]  AUPRC=0.709 [0.706, 0.712]
+
+MC sign test (same-seed AUROC; descriptive only):
+  Model1_clinical vs Model4_IED_slow: Δ=+0.004 [-0.026, +0.024]  p=0.6873  wins 343:656
+
+Primary difference test (bagged OOS; use for Δ / p in figure captions):
+  AUROC DeLong Δ(full−clinical)=+0.006 [-0.005, +0.017]  p = 0.314
+  AUPRC bootstrap Δ(full−clinical)=+0.050 [+0.024, +0.076]  p < 0.001
+
+Reporting rule: AUROC/AUPRC point estimates + CIs = MC mean over 1000 permutations; curve plots = MC-mean ROC/PR; Δ/p = bagged OOS tests above.

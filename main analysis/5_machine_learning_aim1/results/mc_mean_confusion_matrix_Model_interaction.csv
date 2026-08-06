@@ -1,0 +1,2 @@
+model,clf,threshold,n_mc_valid,n_patients,mean_TN,mean_FP,mean_FN,mean_TP,sd_TN,sd_FP,sd_FN,sd_TP,sens_from_mean,spec_from_mean,ppv_from_mean,npv_from_mean,acc_from_mean
+Model_interaction,lr,0.5,1000,1358,146.129,21.871,41.073,62.927,3.9592972905599133,3.9592972905599084,4.581119694753423,4.581119694753423,0.6050673076923077,0.8698154761904762,0.742081181159933,0.7805952927853335,0.7685882352941176

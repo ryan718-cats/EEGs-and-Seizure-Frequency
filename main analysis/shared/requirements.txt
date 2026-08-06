@@ -1,0 +1,11 @@
+# ml_analysis — poor-control logistic + generalized_ml pipeline
+numpy
+pandas
+matplotlib
+scipy
+patsy
+statsmodels
+scikit-learn
+joblib
+tqdm
+shap

@@ -1,0 +1,10 @@
+Univariate Youden marker × poor control (>1/mo) — 1000 patient bootstrap
+Seed=42, alpha=0.05, point estimate = full-sample crude OR
+CI = percentile of bootstrap ORs; p = two-sided bootstrap p (H0: OR=1)
+
+Focal                  IED present       OR=1.84 [1.40, 2.54]  boot p<0.001  (chi2 p=7.128e-05)  N=868
+Focal                  Slowing present   OR=1.33 [1.01, 1.76]  boot p=0.038  (chi2 p=0.03979)  N=868
+Generalized            IED present       OR=2.46 [1.69, 3.55]  boot p<0.001  (chi2 p=2.557e-06)  N=490
+Generalized            Slowing present   OR=4.82 [3.20, 7.32]  boot p<0.001  (chi2 p=1.942e-14)  N=490
+Combined (pooled)      IED present       OR=2.00 [1.58, 2.47]  boot p<0.001  (chi2 p=4.592e-09)  N=1358
+Combined (pooled)      Slowing present   OR=2.00 [1.60, 2.53]  boot p<0.001  (chi2 p=1.265e-09)  N=1358

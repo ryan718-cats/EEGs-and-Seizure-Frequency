@@ -1,0 +1,21 @@
+Aim1 Interactions — paired AUROC: auto Youden vs clinician report (dual-report subset)
+==============================================================================
+N = 92 patients with usable report IED AND slowing; poor = 35 (38.0%)
+
+PRIMARY — discrimination (bagged OOB probabilities)
+  Automated:  AUROC = 0.787
+  Reported:   AUROC = 0.789
+  Difference (auto − report) = -0.002
+  Bootstrap 95% CI of difference [-0.033, +0.032]  (n_boot=1000, seed=42)
+  Bootstrap two-sided p (H0: delta=0) = 0.91
+  Paired DeLong: Δ=-0.002, SE=0.0154, z=-0.097, p=0.9224, 95% CI [-0.032, +0.029]
+
+Interpretation: No evidence that replacing automated annotations reduces discrimination (bootstrap 95% CI of AUROC difference includes 0).
+
+SECONDARY — prediction stability (same subset)
+  Wilcoxon signed-rank (pred_report vs pred_auto): W=182.0, p=0.02937
+  Identical predictions: 57/92 (62%)
+  MAD = 0.030; Pearson r = 0.973
+
+Example sentence:
+  Automated AUROC = 0.79; reported AUROC = 0.79; difference = -0.00 (95% bootstrap CI [-0.03, +0.03]). No evidence that replacing automated annotations reduces discrimination.

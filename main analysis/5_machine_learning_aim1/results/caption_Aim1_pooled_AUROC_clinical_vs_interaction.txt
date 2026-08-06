@@ -1,0 +1,6 @@
+B. Pooled (Focal + Generalized) AUROC Metrics. Interactions Model (0.793 [0.792, 0.795]) vs Clinical Model (0.778 [0.776, 0.779]) difference was statistically different (+0.017 [+0.004, +0.029]; p = 0.008).
+
+Notes:
+- Point estimates and 95% CIs are MC means over 1000 patient-grouped 80/20 permutations (bootstrap CI of the mean).
+- ROC/PR curves are the pointwise mean of the 1000 split curves (interpolated to a common grid).
+- Difference Δ / p: bagged out-of-sample paired DeLong test (full − clinical).

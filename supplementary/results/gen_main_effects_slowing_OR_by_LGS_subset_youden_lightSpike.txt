@@ -1,0 +1,12 @@
+Generalized-only main-effects model (Youden lightSpike): slowing OR by LGS subset
+Specification: outcome ~ age + sex + prior_sz_control + spikes + slowing
+  (same as gen-exclusive main effects; binary Youden markers; poor>1/mo)
+  IED thresh >= 0.9273; slowing thresh >= 13.87%
+
+subset                           n       OR                 95% CI          p
+------------------------------------------------------------------------------
+All generalized                490    3.502         [2.096, 5.852]  1.714e-06
+Generalized, LGS dropped       450    2.959         [1.730, 5.060]  7.388e-05
+LGS only                        40    0.000           [0.000, inf]     0.9995
+
+Saved: outputs/General/gen_main_effects_slowing_OR_by_LGS_subset_youden_lightSpike/slowing_OR_by_subset.csv

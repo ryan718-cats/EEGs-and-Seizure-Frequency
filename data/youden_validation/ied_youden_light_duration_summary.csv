@@ -1,0 +1,2 @@
+duration_basis,n_matched_sessions,auroc,youden_threshold_log10,youden_J,equiv_spike_rate_per_hour,accuracy,sensitivity,specificity,tp,fp,tn,fn,raw_duration_youden_threshold_log10,raw_duration_youden_J,raw_duration_auroc
+light_preprocessed_segment_spans,1882,0.8054390170812108,0.9273258597909964,0.47487175871247506,8.359133126934985,0.7704569606801275,0.6901408450704225,0.7847309136420526,196,344,1254,88,0.6752835340038519,0.47596467415254984,0.8073251775987591

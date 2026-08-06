@@ -1,0 +1,6 @@
+C. Generalized Epilepsy Model AUPRC Metrics. Full Model (0.768 [0.765, 0.772]) vs Clinical Model (0.667 [0.663, 0.671]) difference was statistically different (+0.151 [+0.100, +0.205]; p < 0.001).
+
+Notes:
+- Point estimates and 95% CIs are MC means over 1000 patient-grouped 80/20 permutations (bootstrap CI of the mean).
+- ROC/PR curves are the pointwise mean of the 1000 split curves (interpolated to a common grid).
+- Difference Δ / p: bagged out-of-sample paired bootstrap of AUPRC (full − clinical).

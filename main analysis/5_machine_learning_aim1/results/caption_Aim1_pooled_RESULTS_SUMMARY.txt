@@ -1,0 +1,22 @@
+Aim1 pooled (Focal + Generalized) — clinical vs interactions
+============================================================
+Reporting rule: AUROC/AUPRC point estimates + 95% CIs = MC mean over 1000
+patient-grouped 80/20 permutations (bootstrap CI of the mean).
+ROC/PR curve plots = pointwise mean of the 1000 split curves.
+Δ / p = bagged out-of-sample tests (DeLong for AUROC; paired bootstrap for AUPRC).
+
+MC mean (from mc_auc_auprc_summary.csv):
+  Clinical:      AUROC=0.778 [0.776, 0.779]  AUPRC=0.671 [0.668, 0.673]
+  Interactions:  AUROC=0.793 [0.792, 0.795]  AUPRC=0.730 [0.727, 0.732]
+
+Bagged OOS difference tests:
+  AUROC DeLong Δ(interactions−clinical)=+0.017 [+0.004, +0.029]  p = 0.008
+  AUPRC bootstrap Δ(interactions−clinical)=+0.069 [+0.040, +0.096]  p < 0.001
+
+Caption drafts:
+  see caption_Aim1_pooled_AUROC_clinical_vs_interaction.txt
+  see caption_Aim1_pooled_AUPRC_clinical_vs_interaction.txt
+
+Figures (MC-mean curves):
+  FigAim1_roc_clinical_vs_interaction_lightSpike.png
+  FigAim1_pr_clinical_vs_interaction_lightSpike.png

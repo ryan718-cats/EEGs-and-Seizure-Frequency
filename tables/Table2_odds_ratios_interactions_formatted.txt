@@ -1,0 +1,10 @@
+Term	Odds Ratio	95% CI	Bootstrap p
+IED appearance	1.282	[0.784, 2.093]	0.356
+type × IED appearance	1.297	[0.713, 2.357]	0.392
+slowing appearance	3.451	[2.149, 5.896]	<0.001*
+type × slowing appearance	0.345	[0.184, 0.646]	<0.001*
+focal vs generalized epilepsy	1.830	[1.211, 2.725]	0.006*
+prior poor (>1/mo) vs prior moderate	12.461	[9.052, 17.943]	<0.001*
+prior n/a vs prior moderate	1.704	[1.250, 2.417]	0.002*
+age	0.991	[0.983, 0.999]	0.030*
+sex: male vs female	0.647	[0.494, 0.841]	<0.001*

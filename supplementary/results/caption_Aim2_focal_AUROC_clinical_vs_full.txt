@@ -1,0 +1,6 @@
+D. Focal Epilepsy Model AUROC Metrics. Full Model (0.778 [0.776, 0.780]) vs Clinical Model (0.774 [0.772, 0.776]) difference was not statistically different (+0.006 [-0.005, +0.017]; p = 0.314).
+
+Notes:
+- Point estimates and 95% CIs are MC means over 1000 patient-grouped 80/20 permutations (bootstrap CI of the mean).
+- ROC/PR curves are the pointwise mean of the 1000 split curves (interpolated to a common grid).
+- Difference Δ / p: bagged out-of-sample paired DeLong test (full − clinical).

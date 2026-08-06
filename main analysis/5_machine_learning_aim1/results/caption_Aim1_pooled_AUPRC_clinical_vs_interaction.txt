@@ -1,0 +1,6 @@
+B. Pooled (Focal + Generalized) AUPRC Metrics. Interactions Model (0.730 [0.727, 0.732]) vs Clinical Model (0.671 [0.668, 0.673]) difference was statistically different (+0.069 [+0.040, +0.096]; p < 0.001).
+
+Notes:
+- Point estimates and 95% CIs are MC means over 1000 patient-grouped 80/20 permutations (bootstrap CI of the mean).
+- ROC/PR curves are the pointwise mean of the 1000 split curves (interpolated to a common grid).
+- Difference Δ / p: bagged out-of-sample paired bootstrap of AUPRC (full − clinical).

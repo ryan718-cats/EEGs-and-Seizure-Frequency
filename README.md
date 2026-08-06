@@ -10,13 +10,23 @@ This repository is organized for reading and following along. Raw EDFs are **not
 
 | Folder | What is inside |
 |---|---|
-| [`figures/`](figures/) | Main-text figure PNGs (Figure 2–4). Figure 1 (methods schematic) and Figure 5 (calculator) are omitted. |
+| [`figures/`](figures/) | Main-text figure PNGs (Figure 2–4). Figure 1 (methods schematic) is omitted; Figure 5 (calculator UI) is in the [deployment repo](https://github.com/ryan718-cats/seizure-control-risk-calculator). |
 | [`supplementary/`](supplementary/) | Supplementary figures (eFigures), Python/MATLAB code for those analyses, and related numeric summaries. |
 | [`tables/`](tables/) | Table 1, Table 2 / OR tables, eTable 1, LRTs, univariate tables, plus table-building scripts. |
 | [`main analysis/`](main%20analysis/) | Numbered end-to-end analysis steps (1→6) with scripts and key metric CSVs. |
 | [`data/`](data/) | Analysis cohorts, spike/slowing feature tables, de-identified EEG reports, MORGOTH weights, references for SpikeNet2. |
 
 Start here for a guided path: [`main analysis/README.md`](main%20analysis/README.md).
+
+---
+
+## Clinical deployment (Figure 5)
+
+The browser **seizure control risk calculator** (Interactions logistic model; client-side inference from exported coefficients) lives in a separate repository:
+
+**[ryan718-cats/seizure-control-risk-calculator](https://github.com/ryan718-cats/seizure-control-risk-calculator)**
+
+That repo contains the static site (`index.html`, `predict.js`, `model.json`), parity reference cases, and tests. It is hosted via GitHub Pages for clinical use; this archive holds the analysis and figures that produced the model, not the calculator UI source.
 
 ---
 
@@ -57,7 +67,7 @@ Start here for a guided path: [`main analysis/README.md`](main%20analysis/README
 
 - Raw / light-preprocessed **EDF** recordings
 - Localization side projects, PDR bump notebooks, unused exploratory runs
-- Clinical calculator website source (deployed separately)
+- Calculator **source** (see [seizure-control-risk-calculator](https://github.com/ryan718-cats/seizure-control-risk-calculator) instead)
 
 ## SpikeNet2 weights
 
